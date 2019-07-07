@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>KU Exams</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link href="dist/vanillaCalendar.css" rel="stylesheet">
+    <style>
+        html {
+			box-sizing: border-box;
+			font-size: 11px;
+		}
+        body {
+			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+			color: #333;
+			font-size: 1.5rem;
+			background-color: #FAFAFA;
+			-webkit-font-smoothing: antialiased;
+		}
+
+		a,
+		a:visited {
+			color: #0A9297;
+		}
+
+		h1 {
+			text-align: center;
+		}
+
+		.demo-picked {
+			font-size: 1.6rem;
+			text-align: center;
+		}
+
+		.demo-picked span {
+			font-weight: bold;
+		}
+
+	</style>
+
+</head>
+<body>
+    <?php include 'header.php';?> 
+        <div class = "container">
+            <div class ="row">
+                <div class = "col-md-3 col-sm-12">
+                    <br>
+                    <div class=" flex-column">
+                        <div class="p-2" style="color:#ffffff; background-color:#001a4d">Menus</div>
+                        <div class="p-2 inactiveBack">Exam Schedules & Notices</div>
+                        <div class="p-2 inactiveBack">Exam Results</div>
+                        <div class="p-2 inactiveBack">Exam Forms</div>
+                        <div class="p-2 inactiveBack">exam rules</div>
+                        <div class="p-2 inactiveBack">Contact Us</div>
+                    </div>
+                    <br><br>
+                    <!-- calendar starts from here -->
+                    <div id="v-cal">
+                        <div class="vcal-header">
+                            <button class="vcal-btn" data-calendar-toggle="previous">
+                                <svg height="24" version="1.1" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path>
+                                </svg>
+                            </button>
+            
+                            <div class="vcal-header__label" data-calendar-label="month">
+                                March 2017
+                            </div>
+            
+            
+                            <button class="vcal-btn" data-calendar-toggle="next">
+                                <svg height="24" version="1.1" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="vcal-week">
+                            <span>Mon</span>
+                            <span>Tue</span>
+                            <span>Wed</span>
+                            <span>Thu</span>
+                            <span>Fri</span>
+                            <span>Sat</span>
+                            <span>Sun</span>
+                        </div>
+                        <div class="vcal-body" data-calendar-area="month"></div>
+                    </div>
+                    <p class="demo-picked">
+                        Date picked:
+                        <span data-calendar-label="picked"></span>
+                    </p>
+                </div>
+
+                <div class = "col-md-9 col-sm-12">
+                    <h1>Kathmandu University Exam Section</h1>
+                </div>
+            </div>
+
+        </div>
+    <script src="dist/vanillaCalendar.js" type="text/javascript"></script>
+	<script>
+		window.addEventListener('load', function () {
+			vanillaCalendar.init({
+				disablePastDays: false
+			});
+		})
+    </script>
+</body>
+</html>

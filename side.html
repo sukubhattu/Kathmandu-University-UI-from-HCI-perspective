@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kathmandu University</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/93877d0e99.js"></script> -->
+    <style>
+        .navbar-custom {
+          background-color:#001a4d;
+        }
+        .carousel-inner{
+        width:100%;
+        max-height: 400px !important;
+        }
+        @media only screen and (min-width : 1200px) {
+            .carousel-caption
+            {
+                top: 42%;
+            }
+        }
+        .container-fluid{
+            background-color: #ffe680
+        }
+
+        /* this is for sidenav*/
+      .sidenav {
+          float: left;
+          width: 0;
+          position: absolute;
+          z-index: 1;
+          left: 0;
+          background-color: #D7A1B3;
+          overflow-x: hidden;
+          transition: 0.5s;
+          padding-top: 60px;
+        }
+
+        .sidenav a {
+          padding: 8px 8px 8px 32px;
+          text-decoration: none;
+          font-size: 25px;
+          color: #818181;
+          display: block;
+          transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+          color: #f1f1f1;
+        }
+
+        .sidenav .closebtn {
+          position: absolute;
+          top: 0;
+          right: 25px;
+          font-size: 36px;
+          margin-left: 50px;
+        }
+
+        @media screen and (max-height: 450px) {
+          .sidenav {padding-top: 15px;}
+          .sidenav a {font-size: 18px;}
+        }
+        /* ending for sidenav*/
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-dark navbar-expand-lg navbar-custom">
+          <a class="navbar-brand hoverable" href="#">
+            <img src="img/1200px-Kathmandu_University_Logo.svg.png" style="height:90px;" alt="ku logo">
+          </a>
+          <a class="nav-item nav-link active" style="color:white;" href="#"><h1>काठमाडौं विश्वविद्यालय</h1><span class="sr-only">(current)</span></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" style="padding-left:25px;" href="#"> <h5>Students</h5> <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link active" style="padding-left:25px;" href="#"> <h5>Faculty</h5> <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link active" style="padding-left:25px;" href="#"> <h5>Schools</h5> <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link active" style="padding-left:25px;" href="#"> <h5>Publications</h5> <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link active" style="padding-left:25px;" href="#"> <h5>Exam- Section</h5> <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link active" style="padding-left:25px;" href="#"> <h5>E-Learning</h5> <span class="sr-only">(current)</span></a>
+            </div>
+
+        </nav>
+    </header>
+    
+
+    <!--side navbar -->
+    <div id="mySidenav" class="sidenav" style="width: 250px; height: 500px;">
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
+
+   
+     <!-- end side navbar -->
+
+ <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+    <div id="main" style="margin-left: 350px; margin-right: 50px; padding-top: 50px;">
+
+    <!--news section starts here  -->
+    <div class = "container" style="float: right">
+        <div class = "row">
+            <h1>News</h1>
+        </div>
+        <div class = "row">
+            <div class = "col-md-4">
+
+                <!-- Card Narrower -->
+                <div class="card card-cascade narrower">
+
+                    <!-- Card image -->
+                    <div class="view view-cascade overlay">
+                    <img  class="card-img-top" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(147).jpg" alt="Card image cap">
+                    <a>
+                        <div class="mask rgba-white-slight"></div>
+                    </a>
+                    </div>
+                
+                    <!-- Card content -->
+                    <div class="card-body card-body-cascade">
+                
+                    <!-- Label -->
+                    <!-- here lies the calendar icon -->
+                    <!-- Title -->
+                    <h4 class="font-weight-bold card-title">This is the news title..</h4>
+                    <!-- Text -->
+                    <p class="card-text">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi.</p>
+                    <!-- Button -->
+                    <button type="button" class="btn btn-outline-dark">Read more</button>
+                
+                    </div>
+                    
+                </div>
+            </div>
+            <div class = "col-md-4">
+                <div class="card card-cascade narrower">
+
+                    <!-- Card image -->
+                    <div class="view view-cascade overlay">
+                    <img  class="card-img-top" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(147).jpg" alt="Card image cap">
+                    <a>
+                        <div class="mask rgba-white-slight"></div>
+                    </a>
+                    </div>
+                
+                    <!-- Card content -->
+                    <div class="card-body card-body-cascade">
+                
+                    <!-- Label -->
+                    <!-- here lies the calendar icon -->
+                    <!-- Title -->
+                    <h4 class="font-weight-bold card-title">This is the news title..</h4>
+                    <!-- Text -->
+                    <p class="card-text">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi.</p>
+                    <!-- Button -->
+                    <button type="button" class="btn btn-outline-dark">Read more</button>
+                
+                    </div>
+                        
+                </div>
+            </div>
+            <div class = "col-md-4">
+                <div class="card card-cascade narrower">
+
+                    <!-- Card image -->
+                    <div class="view view-cascade overlay">
+                    <img  class="card-img-top" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(147).jpg" alt="Card image cap">
+                    <a>
+                        <div class="mask rgba-white-slight"></div>
+                    </a>
+                    </div>
+                
+                    <!-- Card content -->
+                    <div class="card-body card-body-cascade">
+                
+                    <!-- Label -->
+                    <!-- here lies the calendar icon -->
+                    <!-- Title -->
+                    <h4 class="font-weight-bold card-title">This is the news title..</h4>
+                    <!-- Text -->
+                    <p class="card-text">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi.</p>
+                    <!-- Button -->
+                    <button type="button" class="btn btn-outline-dark">Read more</button>
+                
+                    </div>
+                        
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="float-right"><button type="button" class="btn btn-outline-dark">Load More News...</button></div><br>
+    </div>
+    <br>
+    <br>
+    <div class = "container-fluid">
+        <br>
+
+    </div>
+</div>
+
+
+    <!-- <i class="fas fa-arrows-alt"></i>
+    <i class="fas fa-quidditch fa-10x"></i> -->
+</body>
+</html>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
